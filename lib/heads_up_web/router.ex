@@ -27,6 +27,8 @@ defmodule HeadsUpWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    get "/tips", TipsController, :index
   end
 
   # Other scopes may use custom stacks.
